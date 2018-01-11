@@ -4,6 +4,9 @@
 	src: url("fonts/Merriweather/Merriweather-Regular.ttf")
 }
 
+* {
+	box-sizing: border-box;
+}
 
 body {
 	
@@ -135,6 +138,7 @@ header {
 .container {
 	width: 100%;
 	margin: 0 auto;
+	/*font-family: "Merriweather";*/
 }
 
 .container-content {
@@ -150,6 +154,14 @@ header {
 	height: auto;
 	margin: 0 auto;
 }
+
+/*.container-content iframe {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}*/
+
 
 .container-content h2 {
 	font-family: "Merriweather", serif;
@@ -182,3 +194,55 @@ header {
 	background: olive;
 	color: white;
 }
+
+footer {
+	width: 100%;
+	background: black;
+	font-family: "Merriweather", serif;
+	color: white;
+	font-size: 0;
+}
+
+.about {
+	display: inline-block;
+	width: 50%
+}
+.contact {
+	vertical-align: top;
+	display: inline-block;
+	width: 50%;
+	padding-left: 60px;
+
+}
+
+/*.about h1 {
+	font-size: 18px;
+}
+
+.about p {
+	font-size: 14px;
+}
+.contact h1 {
+	font-size: 18px;
+}
+
+.contact p {
+	font-size: 14px;
+}*/
+
+.container-content h1 {
+	font-family: "Merriweather", serif;
+	font-size: 24px;
+	font-style: bold;
+	letter-spacing: 0.5px;
+}
+
+.container-content p {
+	font-family: "Merriweather", serif;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+}
+
+.social a {
+	color: red;
+} 
