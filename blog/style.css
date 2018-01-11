@@ -1,0 +1,184 @@
+
+@font-face {
+	font-family: "Merriweather";
+	src: url("fonts/Merriweather/Merriweather-Regular.ttf")
+}
+
+
+body {
+	
+	margin: 0 auto;
+	width: 100%
+	font-size: 0;
+	box-sizing: border-box;
+	font:  "Merriweather";
+}
+
+
+header {
+	/*background: black;*/
+	font-size: 0;
+	width: 100%;
+	/*position: relative;*/
+	padding: 0;
+	margin: 0;
+
+}
+
+.logo  {
+	font-size: 20px;
+	width: 30%;
+	margin: 0;
+	cursor: pointer;	
+	/*background: black;*/
+	display: inline-block;
+	text-align: center;
+	/*border: 2px solid red;*/
+	/*box-sizing: border-box;*/
+}
+
+
+.logo a {
+	padding: 15px;
+	text-transform: uppercase;
+	color: grey;
+	text-decoration: none;
+	font-family: "Merriweather";
+}
+
+.nav {
+	width: 70%;
+	margin: 0;
+	font-size: 18px;
+	/*background: black;*/
+	display: inline-block;
+	/*box-sizing: border-box;*/
+}
+
+.nav li {
+	display: inline-block;
+	padding: 15px;
+	cursor: pointer;
+
+}
+
+.nav li a {
+	text-decoration: none;
+	color: grey;
+	font-family: "Merriweather";
+	/*text-align: right;*/
+}
+
+.nav ul {
+	text-align: right;
+	margin: 0 50px 0 0;
+	padding: 0;
+}
+
+.main {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 750px;
+	margin: 0 auto;
+	padding: 0;
+	background: url(images/home-bg.jpg) top no-repeat;
+	background-size: 100% auto;
+	box-shadow:0 0 0 375px rgba(0, 0, 0, 0.6) inset;
+	color: white;
+	text-align: center;
+	font-family: "Merriweather";
+}
+
+.main: after {
+	background: rgba( 0, 0, 0, 0.3);
+}
+
+.main h1 {
+	display: block;
+	font-size: 64px;
+	padding: 315px 0 0 0;
+	margin: 0;
+}
+
+.main h3 {
+	font-size: 14px;
+	padding: 5px;
+	letter-spacing: 1px;
+	margin: 0;
+	font-weight: normal;
+	color: yellow;
+}
+
+.main a {
+	text-decoration: none;
+	font-family: "Merriweather";
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 2px solid white;
+	border-radius: 25px;
+	padding: 15px;
+	margin: 20px 0 0 0;
+	display: inline-block;
+	color: black;
+	background: white;
+	cursor: pointer;
+
+}
+
+.main a:hover {
+	background: none;
+	color: white;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container-content {
+	width: 62%;
+	margin: 0 auto;
+	padding: 100px 0 50px 0;
+	border-bottom: 1px solid #777;
+}
+
+.container-content img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.container-content h2 {
+	font-family: "Merriweather", serif;
+	font-size: 24px;
+	font-style: bold;
+	letter-spacing: 0.5px;
+}
+
+.container-content h2:hover {
+	color: Olive;
+}
+
+.container-content a {
+	display: inline-block;
+	text-decoration: none;
+	border: 0.5px solid #777;
+	border-radius: 28px;
+	padding: 14px;
+	margin: 25px 0 0 0;
+	cursor: pointer;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	text-decoration: none;
+	font-family: "Merriweather", serif;
+	font-weight: bold;
+	color: #777;
+}
+
+.container-content a:hover {
+	background: olive;
+	color: white;
+}
