@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, san-serif;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	
+}
+
+header {
+	background: white;
+	padding: 5px;
+	box-shadow: 0 0 20px red;
+	font-size: 0;
+}
+
+.logo {
+	width: 30%;
+	display: inline-block;
+}
+
+.menu {
+	width: 70%;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: top;
+}
+
+.menu li {
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: red;
+	padding-top: 40px;
+}
+
+.menu a {
+	text-decoration: none;
+	color: red;
+	padding-right: 15px;
+}
+
+.menu a:hover {
+	color: green;
+}
+
+.main {
+	/*background: url(../img/Child_Safety_Latches.jpg) no-repeat center top / cover;*/
+	width: 100%;	
+	padding-bottom: 20px;
+	margin-top: 15px;
+
+}
+
+ .main img {
+	display: block;
+	padding-top: 20px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.main h2 {
+	padding: 10px 0;
+	color: red;
+	font-size: 32px;
+
+}
+
+.main h3{
+	padding: 10px 0;
+	color: red;
+	font-size: 24px;
+}
+
+.main p {
+
+}
+
+.button {
+	text-align: center;
+}
+
+.button a {
+	border: 2px solid red;
+	border-radius: 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 24px;
+	color: red;
+	padding: 5px;
+	margin: 0 auto;
+	display: inline-block;
+
+
+}
+
+footer {
+	background: red;
+	color: white;
+	padding: 30px;
+}
