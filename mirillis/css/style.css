@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.logo {
+	background: #000;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.graficlogo {
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+nav {
+	margin: 0 auto;
+	width: 100%;
+	padding: 20px 0;
+	
+}
+
+.topnav {
+	background: #fff;
+	font-size: 18px;
+	text-align: center;
+}
+
+.topnav a {
+	color: #000;
+	text-transform: uppercase;
+	margin-left: 10px;
+}
+
+.topnav a:hover {
+	border-bottom: 2px solid #000;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+.baner {
+	width: 100%;
+}
+
+.advantages_container {
+	display: flex;
+	justify-content: center;
+}
+
+.advantages {
+	padding: 30px 0;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.advantage_item {
+	flex-basis: 30%;
+}
+
+footer {
+	width: 100%;
+	background: #000;
+	margin: 0 auto;
+	text-align: center;
+}
+
+footer a {
+	text-transform: uppercase;
+	color: #fff;
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+footer nav a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+footer p {
+	color: white;
+}
+
+.social img {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.social img:hover {
+	background: grey;
+	border-radius: 50%;
+	transition: all 0.2px;
+}
+
+@media screen and (max-width: 768px) {
+	.topnav {
+		position: relative;
+		text-align: left;
+	}
+
+	.topnav a:not(:first-child) {
+		display: none;	
+	}
+
+	.topnav a.icon {
+		display: block;
+		position: absolute;	
+		right: 0;
+		top: 0;
+		color: #000;
+		margin-right: 15px;
+		padding-right: 15px;
+	}
+
+	.topnav.responsive {
+		position: relative;
+	}
+
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.advantage_item {
+	flex-basis: 45%;
+	}
+}
+	
+@media screen and (max-width: 448px) {
+
+	.advantage_item {
+		flex-basis: 100%;
+	}
+}
