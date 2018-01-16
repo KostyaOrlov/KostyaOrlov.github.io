@@ -85,7 +85,7 @@ header {
 	height: 750px;
 	margin: 0 auto;
 	padding: 0;
-	background: url(images/home-bg.jpg) top no-repeat;
+	background: url(images/home-bg.jpg) no-repeat center top / cover;
 	background-size: 100% auto;
 	box-shadow:0 0 0 375px rgba(0, 0, 0, 0.6) inset;
 	color: white;
@@ -122,7 +122,7 @@ header {
 	border: 2px solid white;
 	border-radius: 25px;
 	padding: 15px;
-	margin: 20px 0 0 0;
+	margin: 20px 0 50px 0;
 	display: inline-block;
 	color: black;
 	background: white;
