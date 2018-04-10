@@ -95,3 +95,4 @@ galleryMenu.addEventListener('click', function(e) {
 	
 
 });
+
