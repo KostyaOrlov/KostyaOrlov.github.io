@@ -322,7 +322,8 @@ h4 {
 }
 
 .modal-content {
-	width: 80%;
+	width: 80vw;
+	/*height: 70vh;*/
 	margin: 4vh auto;
 	display: flex;
 	justify-content: center;
@@ -330,8 +331,7 @@ h4 {
 }
 
 .modal-content img {
-	width: auto;
-	max-height: 90vh;
+	/*width: 100%;*/	
 	margin: 0 auto;
 	border: 0.4rem solid white;
 	border-radius: 5px;
@@ -551,8 +551,3 @@ footer {
 .social-link:hover {
 	background: #5c9d7d;
 
-@media screen and (max-width: 700px) {
-  .modal-content img {
-	max-width: 80vw;
- 	}
-}

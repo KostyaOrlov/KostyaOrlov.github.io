@@ -96,3 +96,12 @@ galleryMenu.addEventListener('click', function(e) {
 
 });
 
+let modalImg = document.querySelector('.modal-content img');
+if (document.documentElement.clientHeight < document.documentElement.clientWidth) {
+	modalImg.style.height = (0.8*document.documentElement.clientHeight) + 'px';
+	modalImg.style.width = 'auto';
+} else {
+	modalImg.style.width = (0.8*document.documentElement.clientWidth) + 'px';
+	modalImg.style.height = 'auto';
+}
+
