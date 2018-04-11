@@ -96,12 +96,53 @@ galleryMenu.addEventListener('click', function(e) {
 
 });
 
-let modalImg = document.querySelector('.modal-content img');
-if (document.documentElement.clientHeight < document.documentElement.clientWidth) {
-	modalImg.style.height = (0.8*document.documentElement.clientHeight) + 'px';
-	modalImg.style.width = 'auto';
-} else {
-	modalImg.style.width = (0.8*document.documentElement.clientWidth) + 'px';
-	modalImg.style.height = 'auto';
+let currentModalImg;
+let galleryModal = document.querySelector('.gallery-modal');
+let imgs = Array.from(document.querySelectorAll('.img-container img'));
+let galleryContainer = document.querySelector('.gallery-container');
+let modalImg = document.querySelector('.gallery-modal img');
+let closeBtn = document.querySelector('.close.btn');
+let nextBtn = document.querySelector('.next.btn');
+let prevBtn = document.querySelector('.prev.btn');
+
+
+closeBtn.addEventListener('click', function () {
+	galleryModal.style.display = 'none';
+})
+
+function showModalGallery (current) {
+	galleryModal.style.display = 'block';
+	modalImg.setAttribute('src', imgs[current].getAttribute('src'));
+	modalImg.classList.add('fade');
 }
+
+function showNext () {
+	currentModalImgIndex++;
+	if (currentModalImgIndex === imgs.length) {
+		currentModalImgIndex=0;
+	}
+	showModalGallery(currentModalImgIndex);
+
+}
+
+nextBtn.addEventListener('click', showNext)
+
+function showPrev () {
+	currentModalImgIndex--;
+	if (currentModalImgIndex < 0) {
+		currentModalImgIndex=imgs.length-1;
+	}
+	showModalGallery(currentModalImgIndex);
+}
+
+prevBtn.addEventListener('click', showPrev)
+
+galleryContainer.addEventListener('click', function (e) {
+	let target = e.target;
+	if (target.classList.contains('icon')) {
+			currentModalImgIndex = imgs.indexOf(target.nextElementSibling);
+			showModalGallery(currentModalImgIndex)
+		}
+
+})
 
