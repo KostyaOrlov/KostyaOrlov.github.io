@@ -37,7 +37,7 @@ window.addEventListener('scroll', function(e) {
 	let menuLink = document.querySelectorAll('.menu-link')
 	let logo = document.querySelector('.logo img')
 
-	if (window.pageYOffset > 100) {
+	if (window.pageYOffset > 80) {
 		topMenu.classList.add('scrolled');
 		menuLink.forEach(function(item) {
 			item.style.color = 'black';
