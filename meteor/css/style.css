@@ -54,6 +54,7 @@ a {
 #humburger {
 	display: none;
 	position: absolute;
+	padding: 0.5rem;
 	top: 1rem;
 	right: 1rem;
 }
@@ -710,6 +711,7 @@ footer {
 		
 	}
 
+	
 	.menu ul {
 		padding: 0;
 		margin: 0;
@@ -743,7 +745,7 @@ footer {
 
 	#humburger {
 		display: inline-block;
-		padding: 0;
+		padding:0.5rem;
 		margin: 0;
 	}
 

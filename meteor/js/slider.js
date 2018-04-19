@@ -31,12 +31,23 @@ function startSlide () {
 let humburger = document.getElementById('humburger');
 humburger.addEventListener('click', menuToggle);
 
+
+
 function menuToggle() {
 	let menuList = document.querySelector('.menu ul')
+
 	menuList.classList.toggle('open');
 	menuList.classList.toggle('grow');
-	
+
 };
+
+window.addEventListener('click', function(e) {
+	let menuList = document.querySelector('.menu ul');
+	if (menuList.classList.contains('open') && e.target.closest('span') !== humburger) {
+		menuList.classList.remove('open');
+		menuList.classList.remove('grow')
+	}
+})
 	
 
 startSlide();
