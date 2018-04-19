@@ -615,12 +615,10 @@ footer {
 }
 
 @media screen and (max-width: 850px) {
-	.top-menu {
-		
-	}
-
+	
 	.wrap {
 		width: 90%;
+		margin: 0 auto;
 		
 	}
 
@@ -692,11 +690,13 @@ footer {
 @media screen and (max-width: 550px) {
 	.top-menu {
 		flex-direction: column;
+		justify-content: flex-start;
 		height: 12vh;
 	}
 	.wrap {
 		flex-direction: column;
 		justify-content: flex-start;
+		align-content: center;
 	}
 
 	.logo {
@@ -706,8 +706,8 @@ footer {
 
 	.menu {
 		width: 100%;
-		padding: 0.4rem;
 		margin: 0;
+		
 	}
 
 	.menu ul {
@@ -715,7 +715,8 @@ footer {
 		margin: 0;
 		display: none;
 		background: rgba(255,255,255, 0.9);
-		box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.3);				
+		box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.3);
+						
 	}
 
 	.menu ul.open {
